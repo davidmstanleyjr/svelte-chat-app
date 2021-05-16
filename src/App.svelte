@@ -4,6 +4,7 @@
 	import 'firebase/firestore';
 	import 'firebase/auth';
 	import AuthForm from './components/AuthForm.svelte';
+	
 
 	const firebaseConfig = {
     apiKey: "AIzaSyAQsq59CxdKF2CmbBEQuLaIBh5qgTl1Bvw",
