@@ -1,10 +1,11 @@
 <script>
-	import { FirebaseApp } from 'sveltefire';
-	import firebase from 'firebase/app';
-	import 'firebase/firestore';
-	import 'firebase/auth';
-	import AuthForm from './components/AuthForm.svelte';
-	
+	import { FirebaseApp, User } from 'sveltefire';
+    import firebase from 'firebase/app';
+    import 'firebase/firestore';
+    import 'firebase/auth';
+    import Chats from './components/Chats.svelte';
+    import AuthForm from './components/AuthForm.svelte';
+
 
 	const firebaseConfig = {
     apiKey: "AIzaSyAQsq59CxdKF2CmbBEQuLaIBh5qgTl1Bvw",
@@ -18,7 +19,6 @@
  
 
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
 
 </script>
 
